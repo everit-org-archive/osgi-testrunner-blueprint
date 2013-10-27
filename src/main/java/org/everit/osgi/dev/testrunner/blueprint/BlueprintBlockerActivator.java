@@ -28,7 +28,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-public class Activator implements BundleActivator {
+public class BlueprintBlockerActivator implements BundleActivator {
 
     /**
      * The service registration of the blueprint {@link Blocker}.

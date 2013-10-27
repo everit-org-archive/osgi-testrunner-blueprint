@@ -75,7 +75,7 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Activator>org.everit.osgi.dev.blueprint.Activator</Bundle-Activator>
+                        <Bundle-Activator>org.everit.osgi.dev.testrunner.blueprint.BlueprintBlockerActivator</Bundle-Activator>
                         <Import-Package>
                             *
                         </Import-Package>
