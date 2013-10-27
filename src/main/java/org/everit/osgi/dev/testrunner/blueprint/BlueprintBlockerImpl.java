@@ -125,7 +125,7 @@ public class BlueprintBlockerImpl extends AbstractBlocker implements BlueprintLi
         }
     }
 
-    public void start(BundleContext context) {
+    public void start(final BundleContext context) {
         blueprintListenerServiceRegistration =
                 context.registerService(BlueprintListener.class, this, new Hashtable<String, Object>());
     }

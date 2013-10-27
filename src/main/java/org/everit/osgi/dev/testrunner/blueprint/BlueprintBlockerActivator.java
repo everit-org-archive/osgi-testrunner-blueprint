@@ -41,7 +41,7 @@ public class BlueprintBlockerActivator implements BundleActivator {
     private BlueprintBlockerImpl blueprintBlocker;
 
     @Override
-    public void start(BundleContext context) throws Exception {
+    public void start(final BundleContext context) throws Exception {
         blueprintBlocker = new BlueprintBlockerImpl();
         blueprintBlocker.start(context);
         blockerServiceRegistration =
@@ -49,7 +49,7 @@ public class BlueprintBlockerActivator implements BundleActivator {
     }
 
     @Override
-    public void stop(BundleContext context) throws Exception {
+    public void stop(final BundleContext context) throws Exception {
         blockerServiceRegistration.unregister();
         blueprintBlocker.stop();
     }
